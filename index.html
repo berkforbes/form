@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Food Festival</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="script.js" defer ></script>
+
+</head>
+
+
+<section id="contact">
+    <div class="row section-head">
+      <div class="">
+        <h1 class="title">
+          <span>Request a Buber</span>
+        </h1>
+      </div>
+
+      <div class="ten columns">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="eight columns">
+        <form action="" method="post" id="contactForm" name="contactForm">
+          <fieldset>
+            <div>
+              <label htmlFor="contactName">
+                Name <span class="required">*</span>
+              </label>
+              <input
+                type="text"
+                defaultValue=""
+                size="35"
+                id="contactName"
+                name="contactName"
+                onChange={this.handleChange}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="contactEmail">
+                Email <span class="required">*</span>
+              </label>
+              <input
+                type="text"
+                defaultValue=""
+                size="35"
+                id="contactEmail"
+                name="contactEmail"
+                onChange={this.handleChange}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="contactSubject">Location</label>
+              <input
+                type="text"
+                defaultValue=""
+                size="35"
+                id="contactSubject"
+                name="contactSubject"
+                onChange={this.handleChange}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="contactMessage">
+                Notes for your Buber <span class="required">*</span>
+              </label>
+              <textarea
+                cols="50"
+                rows="15"
+                id="contactMessage"
+                name="contactMessage"
+              ></textarea>
+            </div>
+
+            <div>
+              <button onclick="alertFunction()" class="submit">Submit</button>
+              <script>function alertFunction() {
+              alert("Your Buber Is On The Way")
+              }</script>
+          
+            </div>
+          </fieldset>
+        </form>
